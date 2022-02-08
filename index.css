@@ -1,0 +1,324 @@
+/*-------Utility---------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 80em, 80em;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #fafbfc;
+  font-family: Poppins, sans-serif;
+}
+
+/*---------Homepage-----------*/
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7rem;
+  margin-top: 8em;
+  margin: 0 8em;
+  margin-bottom: 3em;
+}
+.left-container {
+  background: url("/personal-website/images/osagie_website_profile\ 2.PNG")
+    no-repeat center center/cover;
+  height: 32em;
+  width: 35em;
+  border-radius: 0.8em;
+  box-shadow: rgb(44 226 255 / 30%) 0px 10px 40px;
+}
+.left-container-content {
+  margin-top: 17em;
+  justify-content: center;
+  text-align: center;
+  height: 10em;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+#download-cv-btn {
+  border: 0.1em;
+  border-radius: 3em;
+  height: 3em;
+  width: 17em;
+  margin-top: 2em;
+  margin-right: 1em;
+  background-color: #a88185;
+}
+#download-cv-btn:hover {
+  background-color: rgb(218, 176, 176);
+}
+#work-together-btn {
+  border: 0.1em;
+  border-radius: 3em;
+  height: 3em;
+  width: 17em;
+  margin-top: 2em;
+  margin-left: 1em;
+  background-color: #907cb6;
+}
+#work-together-btn:hover {
+  background-color: rgb(218, 176, 176);
+}
+.right-container {
+  display: flex;
+  flex-direction: column;
+  height: 32em;
+  width: 30em;
+  justify-content: space-between;
+}
+#iconn {
+  height: 13.5em;
+  width: 13em;
+  background-size: cover;
+  border: solid 1px;
+  border-radius: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(44 226 255 / 30%) 0px 10px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.about {
+  width: 7em;
+  height: 7em;
+  margin-bottom: 0;
+}
+.title {
+  margin-top: 0.3em;
+  text-decoration: dashed;
+}
+a {
+  text-decoration: none;
+}
+#r-c {
+  display: flex;
+  justify-content: space-between;
+}
+#education-icon {
+  align-items: flex-end;
+}
+#resume-tag {
+  justify-content: center;
+  text-align: center;
+}
+.resume-container {
+  justify-content: center;
+  text-align: left;
+  margin: 0 21em;
+}
+#resume-content {
+  border-left: solid 1em;
+  padding-left: 1em;
+  border-color: #63e1d6;
+  margin-bottom: 5em;
+  margin-top: 2em;
+  box-shadow: rgb(44 226 255 / 30%) 0px 10px 40px;
+}
+.employment-container {
+  margin: 0 21em;
+  justify-content: center;
+  text-align: left;
+}
+.employment-content {
+  border-left: solid 1em;
+  padding-left: 1em;
+  border-color: #ed5064;
+  margin-bottom: 5em;
+  margin-top: 2em;
+  box-shadow: rgb(44 226 255 / 30%) 0px 10px 40px;
+}
+.education-container {
+  margin: 0 21em;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 4em;
+}
+.education-content {
+  border-left: solid 1em;
+  padding-left: 1em;
+  border-color: #9863fb;
+  margin-bottom: 2em;
+  margin-top: 1.5em;
+  box-shadow: rgb(44 226 255 / 30%) 0px 10px 40px;
+}
+
+input {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  box-sizing: border-box;
+  box-shadow: rgb(44 226 255 / 30%) 0px 10px 40px;
+}
+
+.submit {
+  width: 75%;
+  background-color: red;
+  color: white;
+  padding: 1em 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: rgb(218, 176, 176);
+}
+#contact {
+  justify-content: center;
+  text-align: center;
+}
+form {
+  width: 33em;
+  height: 30em;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 1em;
+  background-color: #fafbfc;
+  margin-bottom: 2em;
+}
+
+/*----------Footer--------*/
+
+footer {
+  background-image: url(/personal-website/images/Screenshot\ 2022-02-06\ at\ 10.03.42\ PM.png);
+  background-size: cover;
+  height: 40em;
+  display: flex;
+  flex-direction: column-reverse;
+  /* position: relative; */
+}
+
+/*-------Media Queries-----*/
+
+@media screen and (max-width: 500px) {
+  .top-container {
+    margin-top: 5em;
+    margin: auto;
+  }
+  .right-container {
+    display: none;
+  }
+  .left-container {
+    background-image: url("/personal-website/images/osagie_website_profile\ 2.PNG")
+      no-repeat center center/cover;
+    min-height: 100%;
+    min-width: 600px;
+    border-radius: 0.8em;
+    box-shadow: rgb(44, 226, 255, 0.3) 0px 10px 40px;
+  }
+  .left-container-content {
+    margin-top: 18em;
+    justify-content: center;
+    text-align: center;
+    height: 10em;
+  }
+  .resume-container {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #resume-tag {
+    text-align: left;
+  }
+  #resume-content {
+    border-left: solid 1em;
+    padding-left: 1em;
+    border-color: #63e1d6;
+    margin-bottom: 5em;
+    margin-top: 2em;
+    box-shadow: rgb(44 226 255 / 30%) 0px 10px 40px;
+  }
+  .about {
+    width: 7em;
+    height: 7em;
+    margin-bottom: 0;
+  }
+  .title {
+    margin-top: 0.3em;
+    text-decoration: dashed;
+  }
+  a {
+    text-decoration: none;
+  }
+  #r-c {
+    display: flex;
+    justify-content: space-between;
+  }
+  #education-icon {
+    align-items: flex-end;
+  }
+  #resume-tag {
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .resume-container {
+    /* justify-content: center; */
+    /* text-align: left; */
+    /* margin: 0 21em; */
+    margin-left: -0em;
+  }
+  .employment-container {
+    /* justify-content: center; */
+    /* text-align: left; */
+    /* margin: 0 21em; */
+    margin-left: -0em;
+  }
+  .employment-content {
+    border-left: solid 1em;
+    /* padding-left: 1em; */
+    border-color: #ed5064;
+    margin-bottom: 5em;
+    margin-top: 2em;
+    box-shadow: rgb(44 226 255 / 30%) 0px 10px 40px;
+  }
+  .education-container {
+    /* justify-content: center; */
+    /* text-align: left; */
+    /* margin: 0 21em; */
+    margin-left: -0em;
+  }
+  .education-content {
+    border-left: solid 1em;
+    padding-left: 1em;
+    border-color: #9863fb;
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+    box-shadow: rgb(44 226 255 / 30%) 0px 10px 40px;
+  }
+
+  input {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    box-sizing: border-box;
+    box-shadow: rgb(44 226 255 / 30%) 0px 10px 40px;
+  }
+
+  .submit {
+    width: 75%;
+    background-color: red;
+    color: white;
+    padding: 1em 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+  }
+}
